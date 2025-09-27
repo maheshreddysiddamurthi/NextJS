@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js Roadmap
 
-## Getting Started
+A step-by-step guide to learning **Next.js** and building production-ready apps.
 
-First, run the development server:
+👉 Official Docs: [Next.js Documentation](https://nextjs.org/docs)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📍 1. Prerequisites
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- HTML, CSS, JavaScript (ES6+)
+- React basics (components, props, state, hooks, context)
+- Node.js basics (npm/yarn, environment variables)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💻 2. Installation & Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Install **Node.js (LTS version recommended)**
+   👉 [Download Node.js](https://nodejs.org/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Create a new Next.js app:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npx create-next-app@latest my-app
+   cd my-app
+   ```
 
-## Deploy on Vercel
+3. Run the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Open your browser at:
+
+   ```
+   http://localhost:3000
+   ```
+
+5. Recommended editor: **VS Code**
+
+   - Extensions: Prettier, ESLint, Tailwind CSS IntelliSense
+
+---
+
+## 🚀 3. Getting Started
+
+- Project structure (`pages/`, `public/`, `styles/`)
+- File-based routing (`pages/index.js`, `pages/about.js`)
+
+---
+
+## 🧭 4. Routing & Navigation
+
+- Dynamic routes (`pages/blog/[id].js`)
+- Nested & catch-all routes (`[...slug].js`)
+- Navigation with `next/link` & `useRouter`
+
+## 📦 5. Rendering Methods
+
+- **SSR** – `getServerSideProps`
+- **SSG** – `getStaticProps`, `getStaticPaths`
+- **ISR** – Incremental Static Regeneration
+- **CSR** – Client-side data fetching
+
+---
+
+## 📊 6. Data Fetching
+
+- Fetch API / Axios
+- `getServerSideProps` for real-time data
+- `getStaticProps` for build-time data
+- API routes (`pages/api/hello.js`)
+
+---
+
+## 🗂 7. State Management
+
+- Local state with `useState` and `useReducer`
+- Global state with **Context API**
+- Advanced state libraries:
+
+  - **Redux Toolkit**
+  - **Zustand**
+  - **Recoil**
+
+- Server state management with **React Query / TanStack Query**
+
+---
+
+## 🎨 8. Styling
+
+- CSS Modules
+- Global CSS
+- Styled JSX
+- Tailwind CSS (recommended)
+
+---
+
+## 🔑 9. Authentication
+
+- NextAuth.js or Auth0
+- Protecting routes with middleware & sessions
+
+---
+
+## ⚡ 10. Performance & Optimization
+
+- Image Optimization (`next/image`)
+- Script optimization (`next/script`)
+- Lazy loading & code splitting
+- SEO with `next/head`
+
+---
+
+## 🌐 11. Advanced Features
+
+- Middleware (`middleware.js`)
+- API routes with databases (MongoDB, PostgreSQL, Prisma)
+- Environment variables (`.env.local`)
+- Internationalization (i18n)
